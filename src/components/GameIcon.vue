@@ -11,9 +11,7 @@
 export default {
   name: "GameIcon",
   props: {
-    title: { type: String, default: "タイトルなし" },
-    url: { type: String, default: "" },
-    thumbnail: { type: String, default: "" },
+    gameData: {type: Object}
   },
   data() {
     return {
@@ -21,7 +19,15 @@ export default {
     };
   },
   mounted() {
-
+    console.log(this.gameData)
+  },
+  computed: {
+    title() {
+      return this.gameData.title;
+    },
+    thumbnail() {
+      return require(`@/assets/${this.gameData.thumbnail}`);
+    }
   },
   methods: {
     onClick() {

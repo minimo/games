@@ -1,0 +1,37 @@
+{
+  "hayabusa": {
+    "title": "Return of Hayabusa",
+    "url": "http://minimo.github.io/ReturnOfHayabusa/",
+    "thumbnail": "hayabusa.png"
+  },
+  "kumabang": {
+    "title": "KumaKuma☆BangBang",
+    "url": "http://minimo.github.io/KumaBang_origin/",
+    "thumbnail": "kumabang_origin.png"
+  },
+  "planetbuster": {
+    "title": "PlanetBuster",
+    "url": "http://minimo.github.io/PlanetBuster/",
+    "thumbnail": "planetbuster.png"
+  },
+  "planetbuster2": {
+    "title": "PlanetBuster 2",
+    "url": "http://minimo.github.io/PlanetBuster2/",
+    "thumbnail": "planetbuster2.png"
+  },
+  "thestarsmydestination": {
+    "title": "The stars my destination",
+    "url": "http://minimo.github.io/TheStarsMyDestinationEx/",
+    "thumbnail": "thestarsmydestination.png"
+  },
+  "hiyoko": {
+    "title": "ひよこは意外と高く空を飛ぶ",
+    "url": "http://minimo.github.io/jsstg-2015spring2/",
+    "thumbnail": "kumabang_origin.png"
+  },
+  "planetbusterrevision": {
+    "title": "PlanetBusterRevision",
+    "url": "http://minimo.github.io/PlanetBusterRevision/",
+    "thumbnail": "planetbuster2.png"
+  }
+}
