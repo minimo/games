@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     onClick() {
-
+      window.open(this.gameData.url, "_blank");
     }
   }
 }
