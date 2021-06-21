@@ -9,6 +9,11 @@
     "url": "http://minimo.github.io/KumaBang_origin/",
     "thumbnail": "kumabang_origin.png"
   },
+  "tactics": {
+    "title": "Tactics 9x9",
+    "url": "http://minimo.github.io/tactics/",
+    "thumbnail": "tactics.png"
+  },
   "planetbuster": {
     "title": "PlanetBuster",
     "url": "http://minimo.github.io/PlanetBuster/",
