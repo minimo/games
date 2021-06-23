@@ -38,5 +38,10 @@
     "title": "PlanetBusterRevision",
     "url": "http://minimo.github.io/PlanetBusterRevision/",
     "thumbnail": "planetbuster2.png"
+  },
+  "shotgunpoker": {
+    "title": "Shotgun Poker",
+    "url": "http://minimo.github.io/ShotgunPoker/",
+    "thumbnail": "shotgunpoker.png"
   }
 }
