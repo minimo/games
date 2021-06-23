@@ -1,6 +1,11 @@
 {
+  "applecatch": {
+    "title": "Apple Catch",
+    "url": "http://minimo.github.io/AppleCatch/",
+    "thumbnail": "applecatch.png"
+  },
   "hayabusa": {
-    "title": "Return of Hayabusa",
+    "title": "はやぶさの帰還",
     "url": "http://minimo.github.io/ReturnOfHayabusa/",
     "thumbnail": "hayabusa.png"
   },
@@ -28,6 +33,11 @@
     "title": "The stars my destination",
     "url": "http://minimo.github.io/TheStarsMyDestinationEx/",
     "thumbnail": "thestarsmydestination.png"
+  },
+  "quickdraw": {
+    "title": "Quick Draw",
+    "url": "http://minimo.github.io/QuickDrawEx/",
+    "thumbnail": "shotgunpoker.png"
   },
   "hiyoko": {
     "title": "ひよこは意外と高く空を飛ぶ",
