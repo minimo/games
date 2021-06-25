@@ -31,7 +31,9 @@ export default {
   },
   methods: {
     onClick() {
-      window.open(this.gameData.url, "_blank");
+      this.$store.dispatch("SET_GAME_DATA", this.gameData)
+      this.$router.push({ path: "detail" })
+      // window.open(this.gameData.url, "_blank");
     }
   }
 }
