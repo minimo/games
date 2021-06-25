@@ -21,5 +21,6 @@ export default {
 
 <style scoped lang="scss">
 .title {
+  font-weight: bold;
 }
 </style>
