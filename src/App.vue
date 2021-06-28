@@ -1,12 +1,22 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <PageHeader></PageHeader>
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link>-->
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import PageHeader from "@/components/PageHeader";
+
+export default {
+  name: "app",
+  components: {PageHeader},
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -30,3 +40,9 @@
   }
 }
 </style>
+<script>
+import PageHeader from "@/components/PageHeader";
+export default {
+  components: {PageHeader}
+}
+</script>
