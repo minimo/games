@@ -26,7 +26,8 @@ export default {
 .home {
   width: 100%;
   text-align: center;
-  //display: flex;
+  display: flex;
+  flex-wrap: wrap;
   //justify-content: space-between;
 }
 </style>

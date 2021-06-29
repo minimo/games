@@ -1,9 +1,7 @@
 <template>
   <div class="thumbnail-box" @click="onClick">
+    <div class="title">{{title}}</div>
     <img :src="thumbnail" :alt="alternative">
-    <div class="title">
-      {{title}}
-    </div>
   </div>
 </template>
 
@@ -26,7 +24,7 @@ export default {
       return this.gameData.title;
     },
     thumbnail() {
-      return require(`@/assets/${this.gameData.thumbnail}`);
+      return require(`@/assets/screenshots/${this.gameData.thumbnail}`);
     }
   },
   methods: {
@@ -45,19 +43,22 @@ export default {
     height: 256px;
     margin: 20px auto;
     cursor: pointer;
+    max-width: 300px;
     .title{
       position: relative;
-      top: -100px;
+      top: calc(50% + 16px);
       height: 32px;
       color: white;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
       font-size: 1.4rem;
       border-radius: 6px;
+      margin: 0 5px;
     }
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      image-rendering: crisp-edges;
     }
   }
 </style>

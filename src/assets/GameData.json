@@ -1,6 +1,6 @@
 {
   "applecatch": {
-    "title": "Apple Catch",
+    "title": "崖のくまさん危機一髪",
     "url": "http://minimo.github.io/AppleCatch/",
     "thumbnail": "applecatch.png"
   },
@@ -53,5 +53,10 @@
     "title": "Shotgun Poker",
     "url": "http://minimo.github.io/ShotgunPoker/",
     "thumbnail": "shotgunpoker.png"
+  },
+  "questfortanelorn": {
+    "title": "Quest for Tanelorn",
+    "url": "https://minimo.github.io/QuestForTanelorn/",
+    "thumbnail": "questfortanelorn.png"
   }
 }

@@ -1,7 +1,10 @@
 <template>
   <div>
-  <div class="title">{{title}}</div>
-  <img :src="thumbnail" :alt="alternative">
+    <div class="title">{{title}}</div>
+    <div>
+      <iframe class="iframe" :src="gameUrl"></iframe>
+    </div>
+    <img :src="thumbnail" :alt="alternative">
   </div>
 </template>
 
@@ -13,7 +16,10 @@ export default {
       return this.$store.state.title;
     },
     thumbnail() {
-      return require(`@/assets/${this.$store.state.thumbnail}`);
+      return require(`@/assets/screenshots/${this.$store.state.thumbnail}`);
+    },
+    gameUrl() {
+      return this.$store.state.url;
     }
   }
 }
@@ -21,6 +27,13 @@ export default {
 
 <style scoped lang="scss">
 .title {
+  margin: 20px auto;
+  font-size: 3.0rem;
   font-weight: bold;
+}
+
+.iframe {
+  width: 50%;
+  height: 300px;
 }
 </style>

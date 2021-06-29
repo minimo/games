@@ -30,8 +30,8 @@ export default {
 <style lang="scss" scoped>
 
 .menu-button {
-  width: 70px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   cursor: pointer;
 
   .line {
@@ -45,17 +45,17 @@ export default {
   }
 
   .line-01 {
-    top: 18px;
+    top: 24px;
     transition: 0.4s ease;
   }
 
   .line-02 {
-    top: 26px;
+    top: 32px;
     transition: 0.4s ease;
   }
 
   .line-03 {
-    top: 34px;
+    top: 40px;
     transition: 0.4s ease;
   }
 }
