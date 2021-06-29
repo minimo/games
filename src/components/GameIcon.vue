@@ -51,7 +51,7 @@ export default {
       height: 32px;
       color: white;
       background: rgba(0,0,0,0.5);
-      font-size: 2.0rem;
+      font-size: 1.4rem;
       border-radius: 6px;
     }
     img {
