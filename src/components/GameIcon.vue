@@ -1,7 +1,9 @@
 <template>
   <div class="thumbnail-box" @click="onClick">
+    <div class="icon-box">
+      <img class="icon" :src="thumbnail" :alt="alternative">
+    </div>
     <div class="title">{{title}}</div>
-    <img :src="thumbnail" :alt="alternative">
   </div>
 </template>
 
@@ -17,7 +19,7 @@ export default {
     };
   },
   mounted() {
-    console.log(this.gameData)
+    console.log(this.gameData);
   },
   computed: {
     title() {
@@ -30,7 +32,7 @@ export default {
   methods: {
     onClick() {
       this.$store.dispatch("SET_GAME_DATA", this.gameData)
-      this.$router.push({ path: "detail" })
+      this.$router.push({ path: "detail" });
       // window.open(this.gameData.url, "_blank");
     }
   }
@@ -44,21 +46,28 @@ export default {
     margin: 20px auto;
     cursor: pointer;
     max-width: 300px;
+    min-width: 200px;
+
     .title{
-      position: relative;
-      top: calc(50% + 16px);
       height: 32px;
-      color: white;
-      background: rgba(0,0,0,0.6);
+      color: black;
+      //background: rgba(0,0,0,0.6);
       font-size: 1.4rem;
       border-radius: 6px;
-      margin: 0 5px;
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      image-rendering: crisp-edges;
+    .icon-box {
+      background: rgba(0,0,0,0.2);
+      width: 128px;
+      height: 128px;
+      border-radius: 10px;
+      margin: 10px auto;
+      .icon {
+        width: 128px;
+        height: 128px;
+        object-fit: contain;
+        image-rendering: crisp-edges;
+        border-radius: 10px;
+      }
     }
   }
 </style>
