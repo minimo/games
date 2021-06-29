@@ -48,13 +48,16 @@ export default {
     .title{
       position: relative;
       top: -100px;
+      height: 32px;
       color: white;
       background: rgba(0,0,0,0.5);
-      font-size: 1.5rem;
+      font-size: 2.0rem;
+      border-radius: 6px;
     }
     img {
       width: 100%;
-      object-fit: cover;
+      height: 100%;
+      object-fit: contain;
     }
   }
 </style>

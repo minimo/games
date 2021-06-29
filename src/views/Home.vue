@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      <GameIcon v-for="d in gameData" :gameData="d"></GameIcon>
+    <GameIcon v-for="d in gameData" :gameData="d"></GameIcon>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import GameData from "@/assets/GameData.json";
 export default {
   name: 'Home',
   components: {
-    GameIcon
+    GameIcon,
   },
   computed: {
     gameData() {
