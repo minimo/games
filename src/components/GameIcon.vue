@@ -32,7 +32,8 @@ export default {
   methods: {
     onClick() {
       this.$store.dispatch("SET_GAME_DATA", this.gameData)
-      this.$router.push({ path: "detail" });
+      this.$router.push({ path: "detail" })
+      window.scrollTo({top: 0});
       // window.open(this.gameData.url, "_blank");
     }
   }
@@ -42,17 +43,17 @@ export default {
 <style scoped lang="scss">
   .thumbnail-box {
     width: 25%;
-    height: 256px;
+    height: 170px;
     margin: 20px auto;
     cursor: pointer;
-    max-width: 300px;
+    max-width: 256px;
     min-width: 200px;
 
     .title{
       height: 32px;
       color: black;
       //background: rgba(0,0,0,0.6);
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       border-radius: 6px;
     }
     .icon-box {

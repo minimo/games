@@ -28,6 +28,7 @@ export default {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  //justify-content: space-between;
+  justify-content: space-between;
+
 }
 </style>

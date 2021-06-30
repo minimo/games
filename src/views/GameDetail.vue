@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="detail-box">
     <div class="title">{{title}}</div>
     <div>
       <iframe class="iframe" :src="gameUrl"></iframe>
     </div>
-    <img :src="thumbnail" :alt="alternative">
+    <img class="thumbnail" :src="thumbnail" :alt="alternative">
   </div>
 </template>
 
@@ -26,14 +26,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title {
-  margin: 20px auto;
-  font-size: 3.0rem;
-  font-weight: bold;
+
+.detail-box {
+  .title {
+    margin: 20px auto;
+    font-size: 3.0rem;
+    font-weight: bold;
+  }
+
+  .iframe {
+    width: 500px;
+    height: 500px;
+  }
 }
 
-.iframe {
-  width: 50%;
-  height: 300px;
-}
 </style>
