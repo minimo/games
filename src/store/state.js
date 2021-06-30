@@ -1,5 +1,3 @@
 export default {
-  title: "",
-  thumbnail: "",
-  url: "",
+    gameData: {},
 };
