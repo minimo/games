@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="game-frame-box">
     <iframe
-        class="iframe"
-        :class="{square: isSquare, portrait: isPortrait, landscape: isLandscape}"
+        class="game-frame"
         :src="gameUrl"
+        ref="gameFrame"
     ></iframe>
   </div>
 </template>
@@ -24,35 +24,30 @@ export default {
     gameUrl() {
       return this.gameData.url;
     },
-    orientation() {
-      return this.gameData.orientation;
-    },
-    isSquare() {
-      return this.orientation === 'square';
-    },
-    isPortrait() {
-      return this.orientation === 'portrait';
-    },
-    isLandscape() {
-      return this.orientation === 'landscape';
-    },
   },
+  mounted() {
+    window.addEventListener("resize", this.resize);
+    this.resize();
+  },
+  methods: {
+    resize() {
+      const height = window.innerHeight - 100;
+      this.$refs.gameFrame.style.height = height + "px";
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+.game-frame-box {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
 
-.square {
-  width: 500px;
-  height: 500px;
+  .game-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
-.portrait {
-  width: 290px;
-  height: 500px;
-}
-.landscape {
-  width: 500px;
-  height: 290px;
-}
-
 </style>

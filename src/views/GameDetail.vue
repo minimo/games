@@ -24,10 +24,14 @@ export default {
     gameUrl() {
       return this.gameData.url;
     },
+    alternative() {
+      return "";
+    }
   },
   methods: {
     onClickPlay() {
-      window.open(this.gameUrl, "_blank");
+      this.$router.push({ path: "frame" })
+      // window.open(this.gameUrl, "_blank");
     }
   }
 }

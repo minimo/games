@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GameDetail from "@/views/GameDetail";
+import GameFrame from "@/views/GameFrame";
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/detail',
     name: 'Detail',
     component: GameDetail,
+  },
+  {
+    path: '/frame',
+    name: 'Frame',
+    component: GameFrame,
   }
 ]
 
