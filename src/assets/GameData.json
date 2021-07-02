@@ -3,18 +3,25 @@
     "title": "崖のくまさん危機一髪",
     "url": "http://minimo.github.io/AppleCatch/",
     "thumbnail": "applecatch.png",
-    "orientation": "square"
+    "width": 320,
+    "height": 320,
+    "orientation": "square",
+    "description": "<div>くまくま大変だクマー！</div>"
   },
   "kumabang": {
     "title": "KumaKuma☆BangBang",
     "url": "http://minimo.github.io/KumaBang_origin/",
     "thumbnail": "kumabang_origin.png",
+    "width": 320,
+    "height": 320,
     "orientation": "square"
   },
   "fruitsslash": {
     "title": "Fruits Slash!",
     "url": "https://minimo.github.io/FruitsSlash/",
     "thumbnail": "fruitsslash.png",
+    "width": 320,
+    "height": 320,
     "orientation": "square"
   },
   "hayabusa": {

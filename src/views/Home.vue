@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <GameIcon v-for="d in gameData" :gameData="d"></GameIcon>
+    <GameIcon v-for="d in gameData" :gameData="d" :key="d.title"></GameIcon>
   </div>
 </template>
 
@@ -25,7 +25,8 @@ export default {
 <style scoped lang="scss">
 .home {
   width: 100%;
-  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

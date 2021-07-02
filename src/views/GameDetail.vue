@@ -1,14 +1,10 @@
 <template>
   <div class="detail-box">
     <div class="title">{{title}}</div>
-    <div>
-      <iframe
-          class="iframe"
-          :class="{square: isSquare, portrait: isPortrait, landscape: isLandscape}"
-          :src="gameUrl"
-      ></iframe>
-    </div>
     <img class="thumbnail" :src="thumbnail" :alt="alternative">
+    <div class="play-button-box">
+      <button class="play-button" @click="onClickPlay">PLAY</button>
+    </div>
   </div>
 </template>
 
@@ -28,18 +24,11 @@ export default {
     gameUrl() {
       return this.gameData.url;
     },
-    orientation() {
-      return this.gameData.orientation;
-    },
-    isSquare() {
-      return this.orientation === 'square';
-    },
-    isPortrait() {
-      return this.orientation === 'portrait';
-    },
-    isLandscape() {
-      return this.orientation === 'landscape';
-    },
+  },
+  methods: {
+    onClickPlay() {
+      window.open(this.gameUrl, "_blank");
+    }
   }
 }
 </script>
@@ -52,20 +41,22 @@ export default {
     font-size: 3.0rem;
     font-weight: bold;
   }
+  .thumbnail {
+    width: 320px;
+  }
 
-  .iframe {
-  }
-  .square {
-    width: 500px;
-    height: 500px;
-  }
-  .portrait {
-    width: 290px;
-    height: 500px;
-  }
-  .landscape {
-    width: 500px;
-    height: 290px;
+  .play-button-box {
+    margin: 20px auto;
+    .play-button {
+      width: 200px;
+      height: 48px;
+      color: #2c3e50;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: #ff7f1e solid 4px;
+      border-radius: 24px;
+      background-color: #ffc43e;
+    }
   }
 }
 
