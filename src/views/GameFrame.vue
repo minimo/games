@@ -32,7 +32,15 @@ export default {
   methods: {
     resize() {
       const height = window.innerHeight - 100;
-      this.$refs.gameFrame.style.height = height + "px";
+      const width = window.innerWidth;
+      this.$refs.gameFrame.style.height = `${height}px`;
+      if (this.gameData.orientation === "square") {
+        this.$refs.gameFrame.style.width = `${height}px`;
+        if (width < height) {
+          this.$refs.gameFrame.style.width = `${width - 100}px`;
+          this.$refs.gameFrame.style.height = `${width - 100}px`;
+        }
+      }
     }
   }
 }

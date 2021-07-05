@@ -5,6 +5,9 @@
     <div class="play-button-box">
       <button class="play-button" @click="onClickPlay">PLAY</button>
     </div>
+    <div class="play-button-box">
+      <button class="return-button" @click="onClickReturn">戻る</button>
+    </div>
   </div>
 </template>
 
@@ -30,8 +33,11 @@ export default {
   },
   methods: {
     onClickPlay() {
-      this.$router.push({ path: "frame" })
+      this.$router.push({path: "frame"})
       // window.open(this.gameUrl, "_blank");
+    },
+    onClickReturn() {
+      history.back();
     }
   }
 }
@@ -52,6 +58,16 @@ export default {
   .play-button-box {
     margin: 20px auto;
     .play-button {
+      width: 200px;
+      height: 48px;
+      color: #2c3e50;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: #ff7f1e solid 4px;
+      border-radius: 24px;
+      background-color: #ffc43e;
+    }
+    .return-button {
       width: 200px;
       height: 48px;
       color: #2c3e50;
