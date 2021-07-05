@@ -51,9 +51,9 @@ export default {
 
     .title{
       height: 32px;
-      color: black;
-      //background: rgba(0,0,0,0.6);
+      color: white;
       font-size: 1.1rem;
+      font-weight: bold;
       border-radius: 6px;
     }
     .icon-box {

@@ -26,8 +26,10 @@ export default {
 .home {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
