@@ -17,6 +17,7 @@ export default {
   methods: {
     onClick() {
       this.isActive =! this.isActive;
+      this.$store.dispatch('SET_MENU_OPEN', this.isActive);
       if (this.isActive) {
         this.$emit('open')
       } else {

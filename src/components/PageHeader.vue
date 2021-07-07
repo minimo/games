@@ -2,14 +2,17 @@
   <div class="headere-bar">
     <MenuButton @open="onMenuOpen" @close="onMenuClose"></MenuButton>
     <img class="logo" src="~@/assets/logo.png">
+    <SideBar></SideBar>
   </div>
 </template>
 
 <script>
 import MenuButton from "@/components/MenuButton";
+import SideBar from "@/components/SideBar";
 export default {
   name: "PageHeader",
   components: {
+    SideBar,
     MenuButton
   },
   methods: {
