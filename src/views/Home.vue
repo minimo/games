@@ -1,6 +1,13 @@
 <template>
   <div class="home">
     <GameIcon v-for="d in gameData" :gameData="d" :key="d.title"></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
+    <GameIcon></GameIcon>
   </div>
 </template>
 
@@ -30,8 +37,7 @@ export default {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 </style>

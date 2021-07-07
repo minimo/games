@@ -1,9 +1,11 @@
 <template>
-  <div class="thumbnail-box" @click="onClick">
-    <div class="icon-box">
-      <img class="icon" :src="thumbnail" :alt="alternative">
+  <div class="thumbnail-box" @click="onClick" ref="box">
+    <div v-if="gameData">
+      <div class="icon-box">
+        <img class="icon" :src="thumbnail" :alt="alternative">
+      </div>
+      <div class="title">{{title}}</div>
     </div>
-    <div class="title">{{title}}</div>
   </div>
 </template>
 
@@ -11,7 +13,7 @@
 export default {
   name: "GameIcon",
   props: {
-    gameData: {type: Object}
+    gameData: {type: Object, default: null}
   },
   data() {
     return {
@@ -43,7 +45,7 @@ export default {
 <style scoped lang="scss">
   .thumbnail-box {
     width: 25%;
-    height: 170px;
+    //height: 170px;
     margin: 20px auto;
     cursor: pointer;
     max-width: 256px;
