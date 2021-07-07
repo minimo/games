@@ -21,7 +21,11 @@ export default {
     };
   },
   mounted() {
-    console.log(this.gameData);
+    if (this.gameData) {
+      console.log(this.gameData);
+    } else {
+      this.$refs.box.style.cursor = "default";
+    }
   },
   computed: {
     title() {
@@ -33,6 +37,7 @@ export default {
   },
   methods: {
     onClick() {
+      if (!this.gameData) return;
       this.$store.dispatch("SET_GAME_DATA", this.gameData)
       this.$router.push({ path: "detail" })
       window.scrollTo({top: 0});
@@ -49,7 +54,7 @@ export default {
     margin: 20px auto;
     cursor: pointer;
     max-width: 256px;
-    min-width: 200px;
+    min-width: 180px;
 
     .title{
       height: 32px;
@@ -57,6 +62,9 @@ export default {
       font-size: 1.1rem;
       font-weight: bold;
       border-radius: 6px;
+      @media screen and (max-width: 500px) {
+        font-size: 1.0rem;
+      }
     }
     .icon-box {
       background: rgba(0,0,0,0.2);

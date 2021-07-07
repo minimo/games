@@ -1,13 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home" ref="home">
     <GameIcon v-for="d in gameData" :gameData="d" :key="d.title"></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
-    <GameIcon></GameIcon>
+    <GameIcon v-for="n in 4" :key="n"></GameIcon>
   </div>
 </template>
 
@@ -24,8 +18,8 @@ export default {
   computed: {
     gameData() {
       return GameData;
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -39,5 +33,6 @@ export default {
   border-radius: 12px;
   flex-flow: row wrap;
   justify-content: flex-start;
+  transform-origin: top center;
 }
 </style>
