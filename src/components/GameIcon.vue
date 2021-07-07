@@ -41,7 +41,6 @@ export default {
       this.$store.dispatch("SET_GAME_DATA", this.gameData)
       this.$router.push({ path: "detail" })
       window.scrollTo({top: 0});
-      // window.open(this.gameData.url, "_blank");
     }
   }
 }

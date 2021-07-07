@@ -29,12 +29,19 @@ export default {
     },
     alternative() {
       return "";
+    },
+    isMobile: () => {
+      if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) return true;
+      return false;
     }
   },
   methods: {
     onClickPlay() {
-      this.$router.push({path: "frame"})
-      // window.open(this.gameUrl, "_blank");
+      if (this.isMobile) {
+        window.open(this.gameUrl, "_blank");
+      } else {
+        this.$router.push({path: "frame"});
+      }
     },
     onClickReturn() {
       history.back();
