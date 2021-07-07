@@ -1,10 +1,10 @@
 <template>
   <div class="side-bar-box" :class="{open: isOpen}">
     <div class="menu-item">
-      メニュー
+      <div class="text">メニュー</div>
     </div>
-    <div class="menu-item">
-      Twitter
+    <div class="menu-item" @click="onClickTwitter">
+      <div class="text">Twitter</div>
     </div>
   </div>
 </template>
@@ -16,11 +16,16 @@ export default {
     isOpen() {
       return this.$store.state.isMenuOpen;
     }
+  },
+  methods: {
+    onClickTwitter() {
+      window.open("https://twitter.com/minimo", "_blank");
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .side-bar-box {
   width: 300px;
   background-color: white;
@@ -30,8 +35,11 @@ export default {
   transition: 0.2s;
 
   .menu-item {
-    height: 64px;
-    border: #333333 solid 1px;
+    height: 48px;
+    border-bottom: #aaaaaa solid 0.5px;
+    .text {
+      line-height: 3.0rem;
+    }
   }
 }
 .open {
