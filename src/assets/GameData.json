@@ -92,6 +92,12 @@
       "url": "https://minimo.github.io/SlashBattle/",
       "thumbnail": "questfortanelorn.png",
       "orientation": "landscape"
+    },
+    "test": {
+      "title": "test",
+      "url": "https://minimo.github.io/SlashBattle/",
+      "thumbnail": "",
+      "orientation": "landscape"
     }
   }
 }

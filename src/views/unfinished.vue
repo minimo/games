@@ -1,7 +1,10 @@
 <template>
-  <div class="home" ref="home">
-    <GameIcon v-for="d in gameData.unfinished" :gameData="d" :key="d.title"></GameIcon>
-    <GameIcon v-for="n in 4" :key="n"></GameIcon>
+  <div>
+    <div class="title">習作とか作りかけとか</div>
+    <div class="home" ref="home">
+      <GameIcon v-for="d in gameData.unfinished" :gameData="d" :key="d.title"></GameIcon>
+      <GameIcon v-for="n in 4" :key="n"></GameIcon>
+    </div>
   </div>
 </template>
 
@@ -27,6 +30,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.title {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
 .home {
   width: 100%;
   max-width: 1000px;

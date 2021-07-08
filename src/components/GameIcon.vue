@@ -2,7 +2,8 @@
   <div class="thumbnail-box" @click="onClick" ref="box">
     <div v-if="gameData">
       <div class="icon-box">
-        <img class="icon" :src="thumbnail" :alt="alternative">
+        <img v-if="thumbnail" class="icon" :src="thumbnail" :alt="alternative">
+        <div v-else class="no-image">画像なし</div>
       </div>
       <div class="title">{{title}}</div>
     </div>
@@ -32,6 +33,7 @@ export default {
       return this.gameData.title;
     },
     thumbnail() {
+      if (!this.gameData.thumbnail) return null;
       return require(`@/assets/screenshots/${this.gameData.thumbnail}`);
     },
     gameUrl() {
@@ -93,6 +95,10 @@ export default {
         object-fit: contain;
         image-rendering: crisp-edges;
         border-radius: 10px;
+      }
+      .no-image {
+        width: 128px;
+        color: white;
       }
     }
   }
