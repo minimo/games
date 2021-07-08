@@ -1,6 +1,6 @@
 <template>
   <div class="home" ref="home">
-    <GameIcon v-for="d in gameData.finished" :gameData="d" :key="d.title"></GameIcon>
+    <GameIcon v-for="d in gameData.unfinished" :gameData="d" :key="d.title"></GameIcon>
     <GameIcon v-for="n in 4" :key="n"></GameIcon>
   </div>
 </template>
@@ -11,7 +11,7 @@ import GameIcon from "@/components/GameIcon";
 import GameData from "@/assets/GameData.json";
 
 export default {
-  name: 'Home',
+  name: 'Unfinished',
   components: {
     GameIcon,
   },

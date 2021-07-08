@@ -1,93 +1,97 @@
 {
-  "applecatch": {
-    "title": "崖のくまさん危機一髪",
-    "url": "https://minimo.github.io/AppleCatch/",
-    "thumbnail": "applecatch.png",
-    "width": 320,
-    "height": 320,
-    "orientation": "square",
-    "description": "<div>くまくま大変だクマー！</div>"
+  "finished": {
+    "applecatch": {
+      "title": "崖のくまさん危機一髪",
+      "url": "https://minimo.github.io/AppleCatch/",
+      "thumbnail": "applecatch.png",
+      "orientation": "square",
+      "description": "<div>くまくま大変だクマー！</div>"
+    },
+    "kumabang": {
+      "title": "KumaKuma☆BangBang",
+      "url": "https://minimo.github.io/KumaBang_origin/",
+      "thumbnail": "kumabang_origin.png",
+      "orientation": "square"
+    },
+    "fruitsslash": {
+      "title": "Fruits Slash!",
+      "url": "https://minimo.github.io/FruitsSlash/",
+      "thumbnail": "fruitsslash.png",
+      "orientation": "square"
+    },
+    "hayabusa": {
+      "title": "はやぶさの帰還",
+      "url": "https://minimo.github.io/ReturnOfHayabusa/",
+      "thumbnail": "hayabusa.png",
+      "orientation": "square"
+    },
+    "tactics": {
+      "title": "Tactics 9x9",
+      "url": "https://minimo.github.io/tactics/",
+      "thumbnail": "tactics.png",
+      "orientation": "square"
+    },
+    "planetbuster": {
+      "title": "PlanetBuster",
+      "url": "https://minimo.github.io/PlanetBuster/",
+      "thumbnail": "planetbuster.png",
+      "orientation": "square"
+    },
+    "planetbuster2": {
+      "title": "PlanetBuster 2",
+      "url": "https://minimo.github.io/PlanetBuster2/",
+      "thumbnail": "planetbuster2.png",
+      "orientation": "square"
+    },
+    "thestarsmydestination": {
+      "title": "The stars my destination",
+      "url": "https://minimo.github.io/TheStarsMyDestinationEx/",
+      "thumbnail": "thestarsmydestination.png",
+      "orientation": "square"
+    },
+    "hiyoko": {
+      "title": "ひよこは意外と高く空を飛ぶ",
+      "url": "https://minimo.github.io/hiyokoflyhigh/",
+      "thumbnail": "hiyoko.png",
+      "orientation": "square"
+    },
+    "touchdeshot": {
+      "title": "Touch de SHOT",
+      "url": "https://minimo.github.io/TouchDeShot/",
+      "thumbnail": "touchdeshot.png",
+      "orientation": "square"
+    },
+    "quickdraw": {
+      "title": "Quick Draw",
+      "url": "https://minimo.github.io/QuickDrawEx/",
+      "thumbnail": "quickdraw.png",
+      "orientation": "portrait"
+    },
+    "planetbusterrevision": {
+      "title": "PlanetBusterRevision",
+      "url": "https://minimo.github.io/PlanetBusterRevision/",
+      "thumbnail": "planetbusterrevision.png",
+      "orientation": "portrait"
+    },
+    "shotgunpoker": {
+      "title": "Shotgun Poker",
+      "url": "https://minimo.github.io/ShotgunPoker/",
+      "thumbnail": "shotgunpoker.png",
+      "orientation": "portrait"
+    },
+    "questfortanelorn": {
+      "title": "Quest for Tanelorn",
+      "url": "https://minimo.github.io/QuestForTanelorn/",
+      "thumbnail": "questfortanelorn.png",
+      "orientation": "landscape"
+    }
   },
-  "kumabang": {
-    "title": "KumaKuma☆BangBang",
-    "url": "https://minimo.github.io/KumaBang_origin/",
-    "thumbnail": "kumabang_origin.png",
-    "width": 320,
-    "height": 320,
-    "orientation": "square"
-  },
-  "fruitsslash": {
-    "title": "Fruits Slash!",
-    "url": "https://minimo.github.io/FruitsSlash/",
-    "thumbnail": "fruitsslash.png",
-    "width": 320,
-    "height": 320,
-    "orientation": "square"
-  },
-  "hayabusa": {
-    "title": "はやぶさの帰還",
-    "url": "https://minimo.github.io/ReturnOfHayabusa/",
-    "thumbnail": "hayabusa.png",
-    "orientation": "square"
-  },
-  "tactics": {
-    "title": "Tactics 9x9",
-    "url": "https://minimo.github.io/tactics/",
-    "thumbnail": "tactics.png",
-    "orientation": "square"
-  },
-  "planetbuster": {
-    "title": "PlanetBuster",
-    "url": "https://minimo.github.io/PlanetBuster/",
-    "thumbnail": "planetbuster.png",
-    "orientation": "square"
-  },
-  "planetbuster2": {
-    "title": "PlanetBuster 2",
-    "url": "https://minimo.github.io/PlanetBuster2/",
-    "thumbnail": "planetbuster2.png",
-    "orientation": "square"
-  },
-  "thestarsmydestination": {
-    "title": "The stars my destination",
-    "url": "https://minimo.github.io/TheStarsMyDestinationEx/",
-    "thumbnail": "thestarsmydestination.png",
-    "orientation": "square"
-  },
-  "hiyoko": {
-    "title": "ひよこは意外と高く空を飛ぶ",
-    "url": "https://minimo.github.io/hiyokoflyhigh/",
-    "thumbnail": "hiyoko.png",
-    "orientation": "square"
-  },
-  "touchdeshot": {
-    "title": "Touch de SHOT",
-    "url": "https://minimo.github.io/TouchDeShot/",
-    "thumbnail": "touchdeshot.png",
-    "orientation": "square"
-  },
-  "quickdraw": {
-    "title": "Quick Draw",
-    "url": "https://minimo.github.io/QuickDrawEx/",
-    "thumbnail": "quickdraw.png",
-    "orientation": "portrait"
-  },
-  "planetbusterrevision": {
-    "title": "PlanetBusterRevision",
-    "url": "https://minimo.github.io/PlanetBusterRevision/",
-    "thumbnail": "planetbusterrevision.png",
-    "orientation": "portrait"
-  },
-  "shotgunpoker": {
-    "title": "Shotgun Poker",
-    "url": "https://minimo.github.io/ShotgunPoker/",
-    "thumbnail": "shotgunpoker.png",
-    "orientation": "portrait"
-  },
-  "questfortanelorn": {
-    "title": "Quest for Tanelorn",
-    "url": "https://minimo.github.io/QuestForTanelorn/",
-    "thumbnail": "questfortanelorn.png",
-    "orientation": "landscape"
+  "unfinished": {
+    "slashbattle": {
+      "title": "SlashBattle",
+      "url": "https://minimo.github.io/SlashBattle/",
+      "thumbnail": "questfortanelorn.png",
+      "orientation": "landscape"
+    }
   }
 }
