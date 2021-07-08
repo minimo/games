@@ -1,7 +1,7 @@
 {
   "applecatch": {
     "title": "崖のくまさん危機一髪",
-    "url": "http://minimo.github.io/AppleCatch/",
+    "url": "https://minimo.github.io/AppleCatch/",
     "thumbnail": "applecatch.png",
     "width": 320,
     "height": 320,
@@ -10,7 +10,7 @@
   },
   "kumabang": {
     "title": "KumaKuma☆BangBang",
-    "url": "http://minimo.github.io/KumaBang_origin/",
+    "url": "https://minimo.github.io/KumaBang_origin/",
     "thumbnail": "kumabang_origin.png",
     "width": 320,
     "height": 320,
@@ -26,61 +26,61 @@
   },
   "hayabusa": {
     "title": "はやぶさの帰還",
-    "url": "http://minimo.github.io/ReturnOfHayabusa/",
+    "url": "https://minimo.github.io/ReturnOfHayabusa/",
     "thumbnail": "hayabusa.png",
     "orientation": "square"
   },
   "tactics": {
     "title": "Tactics 9x9",
-    "url": "http://minimo.github.io/tactics/",
+    "url": "https://minimo.github.io/tactics/",
     "thumbnail": "tactics.png",
     "orientation": "square"
   },
   "planetbuster": {
     "title": "PlanetBuster",
-    "url": "http://minimo.github.io/PlanetBuster/",
+    "url": "https://minimo.github.io/PlanetBuster/",
     "thumbnail": "planetbuster.png",
     "orientation": "square"
   },
   "planetbuster2": {
     "title": "PlanetBuster 2",
-    "url": "http://minimo.github.io/PlanetBuster2/",
+    "url": "https://minimo.github.io/PlanetBuster2/",
     "thumbnail": "planetbuster2.png",
     "orientation": "square"
   },
   "thestarsmydestination": {
     "title": "The stars my destination",
-    "url": "http://minimo.github.io/TheStarsMyDestinationEx/",
+    "url": "https://minimo.github.io/TheStarsMyDestinationEx/",
     "thumbnail": "thestarsmydestination.png",
     "orientation": "square"
   },
   "hiyoko": {
     "title": "ひよこは意外と高く空を飛ぶ",
-    "url": "http://minimo.github.io/hiyokoflyhigh/",
+    "url": "https://minimo.github.io/hiyokoflyhigh/",
     "thumbnail": "hiyoko.png",
     "orientation": "square"
   },
   "touchdeshot": {
     "title": "Touch de SHOT",
-    "url": "http://minimo.github.io/TouchDeShot/",
+    "url": "https://minimo.github.io/TouchDeShot/",
     "thumbnail": "touchdeshot.png",
     "orientation": "square"
   },
   "quickdraw": {
     "title": "Quick Draw",
-    "url": "http://minimo.github.io/QuickDrawEx/",
+    "url": "https://minimo.github.io/QuickDrawEx/",
     "thumbnail": "quickdraw.png",
     "orientation": "portrait"
   },
   "planetbusterrevision": {
     "title": "PlanetBusterRevision",
-    "url": "http://minimo.github.io/PlanetBusterRevision/",
+    "url": "https://minimo.github.io/PlanetBusterRevision/",
     "thumbnail": "planetbusterrevision.png",
     "orientation": "portrait"
   },
   "shotgunpoker": {
     "title": "Shotgun Poker",
-    "url": "http://minimo.github.io/ShotgunPoker/",
+    "url": "https://minimo.github.io/ShotgunPoker/",
     "thumbnail": "shotgunpoker.png",
     "orientation": "portrait"
   },
