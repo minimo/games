@@ -43,9 +43,9 @@ export default {
     onClick() {
       if (!this.gameData) return;
 
+      this.$store.dispatch("SET_GAME_DATA", this.gameData);
       if (this.$store.state.isTransitionGameDetail) {
-        this.$store.dispatch("SET_GAME_DATA", this.gameData)
-        this.$router.push({path: "detail"})
+        this.$router.push({path: "detail"});
         window.scrollTo({top: 0});
       } else {
         if (this.isMobile) {
