@@ -2,10 +2,10 @@
   <div class="detail-box">
     <div class="title">{{title}}</div>
     <img class="thumbnail" :src="thumbnail" :alt="alternative">
-    <div class="play-button-box">
+    <div class="button-box">
       <button class="play-button" @click="onClickPlay">PLAY</button>
     </div>
-    <div class="play-button-box">
+    <div class="button-box">
       <button class="return-button" @click="onClickReturn">戻る</button>
     </div>
   </div>
@@ -14,6 +14,9 @@
 <script>
 export default {
   name: "GameDetail",
+  mounted() {
+    this.$store.dispatch('SET_MENU_OPEN', false);
+  },
   computed: {
     gameData() {
       return this.$store.state.gameData;
@@ -62,7 +65,7 @@ export default {
     width: 320px;
   }
 
-  .play-button-box {
+  .button-box {
     margin: 20px auto;
     .play-button {
       width: 200px;

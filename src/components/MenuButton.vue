@@ -9,20 +9,15 @@
 <script>
 export default {
   name: "MenuButton",
-  data() {
-    return {
-      isActive: false,
-    }
+  computed: {
+    isActive() {
+      return this.$store.state.isMenuOpen;
+    },
   },
   methods: {
     onClick() {
-      this.isActive =! this.isActive;
-      this.$store.dispatch('SET_MENU_OPEN', this.isActive);
-      if (this.isActive) {
-        this.$emit('open')
-      } else {
-        this.$emit('close')
-      }
+      const isActive = ! this.$store.state.isMenuOpen;
+      this.$store.dispatch('SET_MENU_OPEN', isActive);
     }
   }
 }

@@ -11,6 +11,11 @@
 <script>
 export default {
   name: "GameFrame",
+  mounted() {
+    this.$store.dispatch('SET_MENU_OPEN', false);
+    window.addEventListener("resize", this.resize);
+    this.resize();
+  },
   computed: {
     gameData() {
       return this.$store.state.gameData;
@@ -24,10 +29,6 @@ export default {
     gameUrl() {
       return this.gameData.url;
     },
-  },
-  mounted() {
-    window.addEventListener("resize", this.resize);
-    this.resize();
   },
   methods: {
     resize() {

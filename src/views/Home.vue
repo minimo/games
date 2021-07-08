@@ -15,6 +15,9 @@ export default {
   components: {
     GameIcon,
   },
+  mounted() {
+    this.$store.dispatch('SET_MENU_OPEN', false);
+  },
   computed: {
     gameData() {
       return GameData;
