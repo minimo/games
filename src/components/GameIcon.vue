@@ -33,14 +33,27 @@ export default {
     },
     thumbnail() {
       return require(`@/assets/screenshots/${this.gameData.thumbnail}`);
+    },
+    isMobile: () => {
+      if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) return true;
+      return false;
     }
   },
   methods: {
     onClick() {
       if (!this.gameData) return;
-      this.$store.dispatch("SET_GAME_DATA", this.gameData)
-      this.$router.push({ path: "detail" })
-      window.scrollTo({top: 0});
+
+      if (this.$store.state.isTransitionGameDetail) {
+        this.$store.dispatch("SET_GAME_DATA", this.gameData)
+        this.$router.push({path: "detail"})
+        window.scrollTo({top: 0});
+      } else {
+        if (this.isMobile) {
+          window.open(this.gameUrl, "_blank");
+        } else {
+          this.$router.push({path: "frame"});
+        }
+      }
     }
   }
 }
