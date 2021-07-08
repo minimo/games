@@ -34,6 +34,9 @@ export default {
     thumbnail() {
       return require(`@/assets/screenshots/${this.gameData.thumbnail}`);
     },
+    gameUrl() {
+      return this.gameData.url;
+    },
     isMobile: () => {
       if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) return true;
       return false;
