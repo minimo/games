@@ -19,6 +19,12 @@
       "thumbnail": "fruitsslash.png",
       "orientation": "square"
     },
+    "savetheastrobear": {
+      "title": "宇宙クマを救え！",
+      "url": "https://minimo.github.io/SaveTheAstrobear/",
+      "thumbnail": "savetheastrobear.png",
+      "orientation": "square"
+    },
     "hayabusa": {
       "title": "はやぶさの帰還",
       "url": "https://minimo.github.io/ReturnOfHayabusa/",
